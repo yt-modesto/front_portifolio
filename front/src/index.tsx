@@ -4,7 +4,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Globalstyle } from "./css/globalcss";
-
+import { Header } from "./components/molecules/Header";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
@@ -13,6 +13,7 @@ root.render(
     {
       <BrowserRouter>
         <Globalstyle />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
