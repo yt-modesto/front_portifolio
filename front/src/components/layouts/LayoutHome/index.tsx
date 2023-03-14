@@ -3,7 +3,6 @@ import * as Styled from "../../../css/layouts/Home";
 export const LayoutHome = () => {
   return (
     <>
-      <header></header>
       <Styled.GridConteiner>
         <section>
           #01

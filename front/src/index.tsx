@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Globalstyle } from "./css/globalcss";
 import { Header } from "./components/molecules/Header";
+import { Projects } from "./pages/Projects";
+import { ContextLinks } from "./contexts/ContextLinks";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
@@ -13,9 +15,12 @@ root.render(
     {
       <BrowserRouter>
         <Globalstyle />
-        <Header />
+        <ContextLinks>
+          <Header />
+        </ContextLinks>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </BrowserRouter>
     }
